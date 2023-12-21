@@ -1,6 +1,6 @@
 import json
 
-class Agenda:
+class Universidade:
   def __init__(self, id, nome, local, id_departamento, telefone):
     self.__id = id
     self.__nome = nome
@@ -88,7 +88,7 @@ class NUniversidades:
       with open("universisdades.json", mode="r") as arquivo:
         universisdades_json = json.load(arquivo)
         for obj in universisdades_json:
-          aux = Agenda(
+          aux = Universidade(
             obj["id"],
             obj["nome"],
             obj["local"], obj["id_departamento"], obj["telefone"])
