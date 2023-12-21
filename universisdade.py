@@ -99,4 +99,4 @@ class NUniversidades:
   @classmethod
   def salvar(cls):
     with open("universisdades.json", mode="w") as arquivo:
-      json.dump(cls.__universisdades, arquivo, default=Agenda.to_json)
+      json.dump(cls.__universisdades, arquivo, default=Universidade.to_json)
